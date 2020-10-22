@@ -30,7 +30,7 @@ id_guru int(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
 id_mapel int(11) NOT NULL,
 nama_guru varchar(255) NOT NULL
 );
-
+...
 create table minggu(
 id_minggu int(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
 nama_minggu varchar(255) NOT NULL
