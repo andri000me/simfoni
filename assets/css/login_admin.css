@@ -1,0 +1,74 @@
+body{
+	font-family: trebuchet ms ;
+	background-image: url('bg.jpg');	
+	background-size: cover;
+}
+
+h1{
+	color: ivory;
+	margin: 3px;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.tulisan_login{
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.kotak_login{
+	width: 300px;
+	background: white;
+	margin: 30px auto;
+	padding: 20px 20px;
+}
+
+label{
+	font-size: 11pt;
+}
+
+.form_login{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px;
+	font-size: 11pt;
+	margin-bottom: 20px;
+}
+
+.tombol_login{
+	background: #2aa7e2;
+	color: white;
+	font-size: 11pt;
+	font-weight: bold;
+	width: 100%;
+	border: none;
+	border-radius: 3px;
+	padding: 10px 20px;
+}
+
+.gambar{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 35%;
+}
+
+.link{
+	background: #2aa7e2;
+	color: white;
+	font-size: 11pt;
+	width: 100%;
+	border: none;
+	border-radius: 3px;
+	padding: 10px 20px;
+}
+
+.alert{
+	background: #e44e4e;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	border: 1px solid #b32929;
+}

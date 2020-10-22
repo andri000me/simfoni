@@ -1,0 +1,76 @@
+create table mapel(
+id_mapel int(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
+nama_mapel varchar(255) NOT NULL
+);
+
+
+create table kelas(
+id_kelas int(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
+nama_kelas varchar(255) NOT NULL
+);
+
+
+create table guru(
+id_guru int(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
+id_mapel int(11) NOT NULL,
+nama_guru varchar(255) NOT NULL
+);
+
+create table minggu(
+id_minggu int(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
+nama_minggu varchar(255) NOT NULL
+);
+
+
+create table bulan(
+id_bulan int(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
+nama_bulan varchar(255) NOT NULL
+);
+
+create table level(
+id_level int(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
+nama_level varchar(255) NOT NULL
+);
+
+create table project1(
+id_project int(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
+judul_project varchar(255) NOT NULL,
+id_mapel1 int(11) NOT NULL,
+id_mapel2 int(11) NOT NULL,
+id_mapel3 int(11) NOT NULL,
+id_mapel4 int(11) NOT NULL,
+hasil_akhir text NOT NULL,
+biaya varchar(255) NOT NULL
+);
+
+
+
+create table project(
+id_project int(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
+judul_project varchar(255) NOT NULL,
+id_mapel1 int(11) varchar(255) NOT NULL,
+id_mapel2 int(11) varchar(255) NOT NULL,
+id_mapel3 int(11) varchar(255) NOT NULL,
+id_mapel4 int(11) varchar(255) NOT NULL,
+hasil_akhir varchar(255) NOT NULL,
+biaya varchar(255) NOT NULL
+);
+
+
+create table admin(
+id_admin int(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
+nama_admin varchar(255) NOT NULL,
+nip_admin varchar(255) NOT NULL,
+username_admin varchar(255) NOT NULL,
+password_admin varchar(255) NOT NULL
+);
+
+
+create table user(
+id_user int(11) AUTO_INCREMENT NOT NULL PRIMARY KEY,
+nama_user varchar(255) NOT NULL,
+nip_user varchar(255) NOT NULL,
+level_user varchar(255) NOT NULL,
+username_user varchar(255) NOT NULL,
+password_user varchar(255) NOT NULL
+);
