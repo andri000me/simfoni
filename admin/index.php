@@ -79,6 +79,7 @@ if (!isset($_SESSION['admin']))
           <li><a href="index.php?halaman=statuspt"><i class="fa fa-circle"></i>  Status PT</a></li>
           <li><a href="index.php?halaman=jurusan"><i class="fa fa-circle"></i>  Jurusan</a></li>
           <li><a href="index.php?halaman=lomba"><i class="fa fa-circle"></i> Data Lomba</a></li>
+          <li><a href="index.php?halaman=lomba"><i class="fa fa-circle"></i> Data Prestasi</a></li>
           <li><a href="index.php?halaman=lulusan"><i class="fa fa-circle"></i> Data Lulusan</a></li>
            </ul>
           </li>
