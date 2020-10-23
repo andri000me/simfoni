@@ -90,14 +90,3 @@ $hitungalumni = $ruang->hitungalumni();
             </div>
         
           </div>        
-
-          <div class="col-lg-6 col-6">
-            <!-- small box -->
-            <div class="small-box bg-info">
-              <div class="inner">
-              <p style="margin-left:20px;padding-top:20px;font-weight:bold;">JUMLAH RUANGAN</p>
-                <p style="margin-left:20px;padding-bottom:30px;font-size:50px;"><?php echo join(',', $hitungjumlahruangan); ?></p>
-              </div>
-            </div>
-        
-          </div>  
