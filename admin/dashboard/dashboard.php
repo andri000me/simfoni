@@ -32,6 +32,40 @@ $hitungalumni = $ruang->hitungalumni();
               <p style="margin-left:20px;padding-top:20px;font-weight:bold;">TOTAL JUMLAH SISWA AKTIF</p>
               <p style="margin-left:20px;padding-bottom:30px;font-size:50px;"><?php echo join(',', $siswa_aktif); ?></p>
               </div>
+              
+            </div>
+        
+          </div>
+
+          <div class="col-lg-6 col-6">
+            <!-- small box -->
+            <div class="small-box bg-info">
+              <div class="inner">
+              <p style="margin-left:20px;padding-top:20px;font-weight:bold;">TOTAL JUMLAH SISWA AKTIF SD</p>
+              <p style="margin-left:20px;padding-bottom:30px;font-size:50px;"><?php echo join(',', $siswa_aktif); ?></p>
+              </div>
+            </div>
+        
+          </div>
+
+          <div class="col-lg-6 col-6">
+            <!-- small box -->
+            <div class="small-box bg-info">
+              <div class="inner">
+              <p style="margin-left:20px;padding-top:20px;font-weight:bold;">TOTAL JUMLAH SISWA AKTIF SMP</p>
+              <p style="margin-left:20px;padding-bottom:30px;font-size:50px;"><?php echo join(',', $siswa_aktif); ?></p>
+              </div>
+            </div>
+        
+          </div>
+
+          <div class="col-lg-6 col-6">
+            <!-- small box -->
+            <div class="small-box bg-info">
+              <div class="inner">
+              <p style="margin-left:20px;padding-top:20px;font-weight:bold;">TOTAL JUMLAH SISWA AKTIF SMA</p>
+              <p style="margin-left:20px;padding-bottom:30px;font-size:50px;"><?php echo join(',', $siswa_aktif); ?></p>
+              </div>
             </div>
         
           </div>
