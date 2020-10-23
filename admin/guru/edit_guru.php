@@ -65,6 +65,8 @@
 				<select class="form-control" name="status_guru" value="">
 					<option value="<?php echo $detail_guru['status_guru']; ?>" hidden><?php echo $detail_guru['status_guru']; ?></option>
 					<option value="SDK">SDK</option>
+					<option value="SDK">SDK HONORER</option>
+					<option value="SDK">OJT</option>
 					<option value="NON SDK">NON SDK</option>
 				</select>
 		</div>

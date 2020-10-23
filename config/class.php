@@ -2108,7 +2108,7 @@ class guru
 	{
 		$semua_data = array();
 		$ambil = $this->koneksi->query("SELECT * FROM guru
-			LEFT JOIN jenjang ON guru.id_jenjang = jenjang.id_jenjang");
+			LEFT JOIN jenjang ON guru.id_jenjang = jenjang.id_jenjang WHERE NOT status_guru='NON SDK' ");
 		while ($data_array = $ambil->fetch_assoc()) 
 		{
 			$semua_data[] = $data_array;
@@ -2591,7 +2591,19 @@ class semester
 		return $semua_data;	
 	}
 
-	
+	function tampil_semester_admin2()
+	{
+		
+		$semua_data = array();
+		$ambil = $this->koneksi->query("SELECT * FROM semester");
+
+		while ($data_array = $ambil->fetch_assoc()) 
+		{
+			$semua_data[] = $data_array;
+		}
+		return $semua_data;	
+	}
+
 	
 
 

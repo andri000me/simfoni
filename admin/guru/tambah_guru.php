@@ -54,6 +54,8 @@
 				<label>Status Guru</label>
 				<select class="form-control" name="status_guru" value="">
 					<option value="SDK">SDK</option>
+					<option value="SDK">SDK HONORER</option>
+					<option value="SDK">OJT</option>
 					<option value="NON SDK">NON SDK</option>
 				</select>
 		</div>

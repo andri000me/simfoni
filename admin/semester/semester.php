@@ -18,7 +18,7 @@
 // $semua_jenjang = $jenjang->tampil_jenjang();
 
 
-$semua_semester = $semester->tampil_semester_admin();
+$semua_semester = $semester->tampil_semester_admin2();
 // $semua_jenjang = $jenjang->tampil_jenjang_admin();
 
 // $semua_mapel = $mapel->tampil_mapel();
