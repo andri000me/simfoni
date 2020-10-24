@@ -4,8 +4,14 @@ body{
 	background-size: cover;
 }
 
+@font-face {
+	font-family: modern;
+	src: url(../fonts/Orbitron-Black.ttf);
+  }
+  
 h1{
-	color: ivory;
+	color: rgb(255, 255, 255);
+	font-family: modern;
 	margin: 3px;
 	font-size: 30px;
 	text-align: center;
@@ -14,6 +20,7 @@ h1{
 
 .tulisan_login{
 	text-align: center;
+	font-family: modern;
 	text-transform: uppercase;
 	font-weight: bold;
 }

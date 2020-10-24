@@ -48,14 +48,14 @@ if (!isset($_SESSION['admin']))
         <span class="icon-bar"></span>
       </button>
       
-      <a class="navbar-brand" href="#">SISTEM INFORMASI FORM ONLINE SEKOLAH SUKMA BANGSA <?php echo strtoupper ($db_lokasi)?></a>
+      <a class="navbar-brand" href="#"><img src="../logo.jpg" width="40px" class="img-circle" style="display:inline-block;"> SISTEM INFORMASI MANAJEMEN FORM ONLINE SEKOLAH SUKMA BANGSA <?php echo strtoupper ($db_lokasi)?></img></a>
     </div>
       </nav>
     <nav class="navbar-default navbar-side hidden-print">
       <div class="sidebar-collapse"> 
       <div class="user">
-      <img src="../logo.jpg" width="40px" class="img-circle">
-        <h3>Selamat Datang, Admin!</h3>
+      <img src="../assets/img/user.png" width="40px" class="img-circle">
+        <h3>Halo, Admin!</h3>
         <p></p>
       </div>
       <ul class="nav" id="main-menu">
@@ -73,13 +73,11 @@ if (!isset($_SESSION['admin']))
           <li><a href="index.php?halaman=ruang"><i class="fa fa-circle"></i> Ruang</a></li>
           <li><a href="index.php?halaman=mapel"><i class="fa fa-circle"></i> Mata Pelajaran</a></li>
           <li><a href="index.php?halaman=semester"><i class="fa fa-circle"></i> Semester</a></li>
-
            <li><a href="index.php?halaman=tp"><i class="fa fa-circle"></i>  Tahun Pelajaran</a></li>
           <li><a href="index.php?halaman=jk"><i class="fa fa-circle"></i>  Jenis Kelamin</a></li>
           <li><a href="index.php?halaman=statuspt"><i class="fa fa-circle"></i>  Status PT</a></li>
           <li><a href="index.php?halaman=jurusan"><i class="fa fa-circle"></i>  Jurusan</a></li>
-          <li><a href="index.php?halaman=lomba"><i class="fa fa-circle"></i> Data Lomba</a></li>
-          <li><a href="index.php?halaman=lomba"><i class="fa fa-circle"></i> Data Prestasi</a></li>
+          <li><a href="index.php?halaman=lomba"><i class="fa fa-circle"></i> Data Lomba dan Prestasi</a></li>
           <li><a href="index.php?halaman=lulusan"><i class="fa fa-circle"></i> Data Lulusan</a></li>
            </ul>
           </li>

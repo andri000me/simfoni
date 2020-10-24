@@ -2,24 +2,33 @@
 2 css yang akan dibuat
 css spesifik untuk desktop dan css untuk mobile secara umum
 */
+@font-face {
+	font-family: modern;
+	src: url(../fonts/EncodeSans-VariableFont_wdth\,wght.ttf);
+  }
+
 body{
-	font-family: 'Open Sans', sans-serif;
+	font-family: modern;
 }
 #wrapper{
 	width: 100%;
-	background: #202020;
+	background: #15232c;
 }
 .navbar{
 	margin-bottom: 0px;
+	height: 70px;
 }
 /*navbar atas*/
 .navbar-default{
-	background-color: #337ab7;
-	border-color: #31708f;
+	background-color:#0BA5AF;
+	border-color:#0BA5AF ;
 }
 .navbar-default .navbar-brand{
 	color: #f4f4f4;
+	font-weight: bold;
 }
+
+
 .navbar-default .navbar-brand:hover{
 	color: #f4f4f4;
 }
@@ -38,7 +47,7 @@ body{
 }
 .navbar-side .user h3{
 	color: #f4f4f4;
-	font-size: 14px;
+	font-size: 18px;
 	font-weight: 600;
 }
 .navbar-side .user p{
@@ -46,7 +55,7 @@ body{
 	font-size: 12px;
 }
 .navbar-side{
-	background: #202020;
+	background: #15232c;
 }
 .navbar-side ul li{
 	border-bottom: 1px solid rgba(107, 108, 109, 0.19);
@@ -63,11 +72,14 @@ body{
 	margin: 0px;
 	list-style: none;
 	display: none;
+	background: #203441;
 }
 .navbar-side .tr-tree > .tr-tree-menu li a{
 	padding: 10px;
 	display: block;
 	font-size: 13px;
+	margin-left: 10px;
+	background: #203441;
 }
 .navbar-side .tr-tree > .tr-tree-menu li a:hover{
 	background: #f4f4f4;
@@ -83,7 +95,7 @@ body{
 }
 #page-wrapper{
 	padding: 15px;
-	background: #f3f3f3;
+	background: #ffffff;
 }
 #page-inner{
 	background: #fff;

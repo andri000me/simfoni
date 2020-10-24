@@ -45,14 +45,14 @@ if (!isset($_SESSION['konselor']))
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">SISTEM INFORMASI FORM ONLINE SEKOLAH SUKMA BANGSA <?php echo strtoupper ($db_lokasi)?> </a>
+      <a class="navbar-brand" href="#"><img src="../logo.jpg" width="40px" class="img-circle" style="display:inline-block;"> SISTEM INFORMASI MANAJEMEN FORM ONLINE SEKOLAH SUKMA BANGSA <?php echo strtoupper ($db_lokasi)?></img></a>
     </div>
       </nav>
     <nav class="navbar-default navbar-side hidden-print">
       <div class="sidebar-collapse"> 
       <div class="user">
-      <img src="../logo.jpg" width="40px" class="img-circle">
-        <h3>Selamat Datang, Konselor!</h3>
+      <img src="../assets/img/user.png" width="40px" class="img-circle">
+        <h3>Halo, Konselor!</h3>
         <p></p>
       </div>
         <ul class="nav" id="main-menu">

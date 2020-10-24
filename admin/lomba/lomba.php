@@ -1,6 +1,6 @@
 <div class="row">
 	<div class="col-md-6">
-		<h3>Data Hasil Lomba Siswa</h3>
+		<h3>Data Lomba dan Prestasi Siswa<br></h3>
 		<h3>Sekolah Sukma Bangsa Bireuen</h3>
 	</div>
 	<div class="col-md-6">

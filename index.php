@@ -20,11 +20,11 @@ window.location.href = "http://www.detik.com"
 <p></p>
 <p></p>
 <h1 align="center">SIMFONI</h1>
-<h1 align="center">SISTEM INFORMASI FORM ONLINE</h1>
+<h1 align="center">SISTEM INFORMASI MANAJEMEN FORM ONLINE</h1>
 <h1 align="center">SEKOLAH SUKMA BANGSA <?php echo strtoupper ($db_lokasi)?>	</h1>
 
 <div class="kotak_login">
-	<img src="assets/img/logo.png" class="gambar" align="middle">
+	<img src="logo.png" class="gambar" align="middle">
 	<p class="tulisan_login">Silakan Login</p>
 	<br/>
 	<form method="POST">
