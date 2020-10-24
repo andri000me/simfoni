@@ -44,14 +44,14 @@ if (!isset($_SESSION['pjruangan']))
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">SISTEM INFORMASI FORM ONLINE SEKOLAH SUKMA BANGSA <?php echo strtoupper ($db_lokasi)?></a>
+      <a class="navbar-brand" href="#"><img src="../logo.jpg" width="40px" class="img-circle" style="display:inline-block;"> SISTEM INFORMASI MANAJEMEN FORM ONLINE SEKOLAH SUKMA BANGSA <?php echo strtoupper ($db_lokasi)?></img></a>
     </div>
       </nav>
     <nav class="navbar-default navbar-side hidden-print">
       <div class="sidebar-collapse"> 
       <div class="user">
-      <img src="../logo.jpg" width="40px" class="img-circle">
-        <h3>Selamat Datang, PJ Ruangan!</h3>
+      <img src="../assets/img/user.png" width="40px" class="img-circle">
+        <h3>Halo, Pj Ruangan!</h3>
         <p></p>
       </div>
         </div>
@@ -59,7 +59,7 @@ if (!isset($_SESSION['pjruangan']))
 
        
 
-
+           <li><a href="index.php?halaman=home"><i class="fa fa-home"></i> Home</a></li>
            <li><a href="index.php?halaman=tampil_jadwal"><i class="fa fa-calendar"></i> Jadwal Tetap Ruangan</a></li>
            <li><a href="index.php?halaman=tambah_ruang"><i class="fa fa-plus"></i> Tambah Data Pemakaian Ruang</a></li>
            <li><a href="index.php?halaman=tampil_ruang"><i class="fa fa-check"></i> Persetujuan Pengajuan ruangan</a></li>
@@ -89,6 +89,10 @@ if (!isset($_SESSION['pjruangan']))
         elseif ($_GET['halaman']=='tambah_class_project') 
         {
           include 'project/tambah_class_project.php';
+        }
+        elseif ($_GET['halaman']=='home') 
+        {
+          include 'home/home.php';
         }
         elseif ($_GET['halaman']=='tambah_guest') 
         {

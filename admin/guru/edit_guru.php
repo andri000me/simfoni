@@ -68,6 +68,7 @@
 					<option value="SDK">SDK HONORER</option>
 					<option value="SDK">OJT</option>
 					<option value="NON SDK">NON SDK</option>
+					<option value="NON SDK">TIDAK AKTIF</option>
 				</select>
 		</div>
 

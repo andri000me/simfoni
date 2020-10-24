@@ -44,15 +44,15 @@ if (!isset($_SESSION['pengguna']) OR $_SESSION['pengguna']['nama_jenjang'] !== "
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">SISTEM INFORMASI FORM ONLINE SEKOLAH SUKMA BANGSA <?php echo strtoupper ($db_lokasi)?> </a>
+      <a class="navbar-brand" href="#"><img src="../../logo.jpg" width="40px" class="img-circle" style="display:inline-block;"> SISTEM INFORMASI MANAJEMEN FORM ONLINE SEKOLAH SUKMA BANGSA <?php echo strtoupper ($db_lokasi)?></img></a>
     </div>
     </div>
       </nav>
     <nav class="navbar-default navbar-side hidden-print">
       <div class="sidebar-collapse"> 
       <div class="user">
-      <img src="../../logo.jpg" width="40px" class="img-circle">
-        <h3>Selamat Datang, SDK!</h3>
+      <img src="../../assets/img/user.png" width="40px" class="img-circle">
+        <h3>Halo, SDK!</h3>
         <p></p>
       </div>
         <ul class="nav" id="main-menu">
@@ -79,7 +79,7 @@ if (!isset($_SESSION['pengguna']) OR $_SESSION['pengguna']['nama_jenjang'] !== "
             <ul class="tr-tree-menu"> 
               <li><a href="index.php?halaman=tampil_class_project"><i class="fa fa-database"></i> Class Project</a></li>
              <li><a href="index.php?halaman=tampil_guest"><i class="fa fa-database"></i> Guest Teacher</a></li>
-              <li><a href="index.php?halaman=tampil_visit"><i class="fa fa-database"></i>School Visit</a>
+              <li><a href="index.php?halaman=tampil_visit"><i class="fa fa-database"></i> School Visit</a>
               </li>     
 
            </ul>

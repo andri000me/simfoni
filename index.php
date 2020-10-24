@@ -71,7 +71,7 @@ window.location.href = "http://www.detik.com"
 		else
 			if ($cek4=="pjruangan")
 			{
-				echo "<script>location='pjruangan/index.php'</script>";
+				echo "<script>location='pjruangan/index.php?halaman=home'</script>";
 			}
 		else
 			if ($cek5=="pustaka")

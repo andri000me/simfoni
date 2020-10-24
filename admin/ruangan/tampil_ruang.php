@@ -1,11 +1,9 @@
 <div class="row">
 	<div class="col-md-6">
-		<h3>Data Pemakaian Ruangan</h3>
-		<h3>Sekolah Sukma Bangsa <?php echo  ($db_lokasi)?></h3>
-	</div>
+	<h2><b><i class="fa fa-check"></i> DATA PERSETUJUAN RUANGAN</a></li></b></h2>	
 	
-
-</div>
+	</div>
+	</div>
  <?php  
 // include_once "../config/class.php";
 

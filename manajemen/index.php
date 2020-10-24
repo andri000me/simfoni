@@ -92,7 +92,7 @@ if (!isset($_SESSION['manajemen']))
              <li><a href="index.php?halaman=tambah_guest"><i class="fa fa-plus"></i> Tambah Data Guest Teacher</a></li>
               <li><a href="index.php?halaman=tambah_visit"><i class="fa fa-plus"></i> Tambah Data School Visit</a></li>
               <li><a href="index.php?halaman=tambah_visit_home"><i class="fa fa-plus"></i> Tambah Data Home Visit</a></li>
-              <li><a href="index.php?halaman=tambah_lomba"><i class="fa fa-plus"></i> Tambah Data Lomba</a></li>
+              <li><a href="index.php?halaman=tambah_lomba"><i class="fa fa-plus"></i> Tambah Data Lomba Dan Prestasi</a></li>
             </ul>
           </li>
 
