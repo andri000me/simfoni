@@ -100,7 +100,6 @@ $semua_visit = $visit->tampil_visit_periode_smp($id_semester);
 			</tbody>
 		</table>
 			<div class="text-right">
-<a href="" onclick="print()" class="btn btn-success hidden-print"><i class="fa fa-print"></i> Cetak</a>
 </div>
 </div>
 		

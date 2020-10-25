@@ -1,3 +1,5 @@
+
+
 <div class="row">
 	<div class="col-md-6">
 		<h3>Jadwal Tetap Pemakaian Ruangan</h3>
@@ -14,6 +16,7 @@
 
 
 </div>
+<hr>
  <?php  
 // include_once "../config/class.php";
 
@@ -114,7 +117,6 @@ $data_hari = $hari->tampil_hari();
 			</tbody>
 		</table>
 			<div class="text-right">
-<a href="" onclick="print()" class="btn btn-success hidden-print"><i class="fa fa-print"></i> Cetak Laporan</a>
 </div>
 </div>
 		
