@@ -12,6 +12,7 @@
 
 
 </div>
+<hr>
  <?php  
 
 
@@ -76,7 +77,6 @@ $semua_mitra = $mitra->tampil_mitra_sd();
 		</table>
 
 		<div class="text-right">
-<a href="" onclick="print()" class="btn btn-success hidden-print"><i class="fa fa-print"></i> Cetak</a>
 </div>
 </div>
 		

@@ -24,7 +24,7 @@ $data_lomba = $lomba->tampil_periode_lombasma($id_tp);
 
 
 </div>
-
+<hr>
 
 
 <!DOCTYPE html>
@@ -82,6 +82,5 @@ $data_lomba = $lomba->tampil_periode_lombasma($id_tp);
 	</tbody>
 </table>
 <div class="text-right">
-<a href="" onclick="print()" class="btn btn-success hidden-print"><i class="fa fa-print"></i> Cetak</a>
 </div>
 </div>

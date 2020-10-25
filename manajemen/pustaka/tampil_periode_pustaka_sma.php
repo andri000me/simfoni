@@ -25,7 +25,7 @@ $data_datapustaka = $datapustaka->tampil_datapustaka_periode_sma($id_semester);
 
 
 </div>
-
+<hr>
 
 
 <!DOCTYPE html>
@@ -84,7 +84,6 @@ $data_datapustaka = $datapustaka->tampil_datapustaka_periode_sma($id_semester);
 			</tbody>
 		</table>
 			<div class="text-right">
-<a href="" onclick="print()" class="btn btn-success hidden-print"><i class="fa fa-print"></i> Cetak Laporan</a>
 </div>
 </div>
 		

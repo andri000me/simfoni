@@ -52,7 +52,7 @@ if (!isset($_SESSION['pengguna']) OR $_SESSION['pengguna']['nama_jenjang'] !== "
       <div class="sidebar-collapse"> 
       <div class="user">
       <img src="../../assets/img/user.png" width="40px" class="img-circle">
-        <h3>Halo, SDK!</h3>
+        <h3>Halo, SDK SMA!</h3>
         <p></p>
       </div>
         <ul class="nav" id="main-menu">

@@ -24,7 +24,7 @@ $semua_visit_home = $visit_home->tampil_visit_home_periode_smp($id_semester);
 
 
 </div>
-
+<hr>
 
 
 <!DOCTYPE html>
@@ -91,7 +91,6 @@ $semua_visit_home = $visit_home->tampil_visit_home_periode_smp($id_semester);
 			</tbody>
 		</table>
 			<div class="text-right">
-<a href="" onclick="print()" class="btn btn-success hidden-print"><i class="fa fa-print"></i> Cetak</a>
 </div>
 </div>
 		

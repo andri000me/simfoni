@@ -16,7 +16,7 @@ $semua_kegiatan = $kegiatan->tampil_kegiatan_periode_smp($id_semester);
 		<h3>Sekolah Sukma Bangsa <?php echo ($db_lokasi)?></h3>
 		
 	</div>
-
+<hr>
 
 
 	<div class="col-md-6">
@@ -104,7 +104,6 @@ $semua_kegiatan = $kegiatan->tampil_kegiatan_periode_smp($id_semester);
 		</table>
 
 		<div class="text-right">
-<a href="" onclick="print()" class="btn btn-success hidden-print"><i class="fa fa-print"></i> Cetak</a>
 </div>
 </div>
 		

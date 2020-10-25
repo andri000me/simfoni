@@ -24,7 +24,7 @@ $semua_guest = $guest->tampil_guest_periode_sma($id_semester);
 
 
 </div>
-
+<hr>
 
 
 <!DOCTYPE html>
@@ -104,7 +104,6 @@ $semua_guest = $guest->tampil_guest_periode_sma($id_semester);
 		</table>
 
 		<div class="text-right">
-<a href="" onclick="print()" class="btn btn-success hidden-print"><i class="fa fa-print"></i> Cetak</a>
 </div>
 </div>
 		

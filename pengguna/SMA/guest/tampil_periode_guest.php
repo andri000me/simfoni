@@ -118,7 +118,6 @@ $semua_kelas4 = $kelas4->tampil_kelas4();
 			</tbody>
 		</table>
 			<div class="text-right">
-<a href="" onclick="print()" class="btn btn-success hidden-print"><i class="fa fa-print"></i> Cetak Laporan</a>
 </div>
 </div>
 		

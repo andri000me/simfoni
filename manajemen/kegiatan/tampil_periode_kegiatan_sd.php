@@ -25,7 +25,7 @@ $semua_kegiatan = $kegiatan->tampil_kegiatan_periode_sd($id_semester);
 
 
 </div>
-
+<hr>
 
 
 <!DOCTYPE html>
@@ -101,7 +101,6 @@ $semua_kegiatan = $kegiatan->tampil_kegiatan_periode_sd($id_semester);
 		</table>
 
 		<div class="text-right">
-<a href="" onclick="print()" class="btn btn-success hidden-print"><i class="fa fa-print"></i> Cetak</a>
 </div>
 </div>
 		

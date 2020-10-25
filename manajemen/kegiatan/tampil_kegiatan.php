@@ -12,6 +12,7 @@
 
 
 </div>
+<hr>
  <?php  
 // include_once "../config/class.php";
 
@@ -102,7 +103,6 @@ $semua_kegiatan = $kegiatan->tampil_kegiatan_admin();
 		</table>
 
 		<div class="text-right">
-<a href="" onclick="print()" class="btn btn-success hidden-print"><i class="fa fa-print"></i> Cetak</a>
 </div>
 </div>
 		

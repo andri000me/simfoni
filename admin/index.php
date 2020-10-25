@@ -750,7 +750,7 @@ if (!isset($_SESSION['admin']))
           $('#data-table').DataTable({
         dom: 'Bfrtip',
         buttons: [
-           {extend: 'excel',text: ' Simpan Ke File Excel',className: 'btn btn-primary', exportOptions: {
+           {extend: 'excel',text: ' Simpan File Excel',className: 'btn btn-primary', exportOptions: {
     columns: ':not(:last-child)'} }
            
         ]

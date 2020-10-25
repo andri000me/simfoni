@@ -6,6 +6,7 @@
 	
 
 </div>
+<hr>
  <?php  
 // include_once "../config/class.php";
 
@@ -95,7 +96,6 @@ $data_guru = $guru->tampil_guru_pjruangan();
 			</tbody>
 		</table>
 			<div class="text-right">
-<a href="" onclick="print()" class="btn btn-success hidden-print"><i class="fa fa-print"></i> Cetak Laporan</a>
 </div>
 </div>
 		

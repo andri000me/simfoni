@@ -12,6 +12,7 @@
 
 
 </div>
+<hr>
  <?php  
 // include_once "../config/class.php";
 
@@ -89,7 +90,6 @@ $semua_visit_home = $visit_home->tampil_visit_home_admin();
 			</tbody>
 		</table>
 			<div class="text-right">
-<a href="" onclick="print()" class="btn btn-success hidden-print"><i class="fa fa-print"></i> Cetak</a>
 </div>
 </div>
 		

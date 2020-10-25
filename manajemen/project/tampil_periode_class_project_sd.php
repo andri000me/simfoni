@@ -24,7 +24,7 @@ $semua_project = $project->tampil_class_project_periode_sd($id_semester);
 
 
 </div>
-
+<hr>
 
 
 <!DOCTYPE html>
@@ -34,7 +34,7 @@ $semua_project = $project->tampil_class_project_periode_sd($id_semester);
 	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
 </head>
 <body>
-	
+	hr
 <!-- <form action="upload_laporan_project.php" method="POST" enctype="multipart/form-data">	 -->
 
 <div class="row">
@@ -104,7 +104,6 @@ $semua_project = $project->tampil_class_project_periode_sd($id_semester);
 			</tbody>
 		</table>
 			<div class="text-right">
-<a href="" onclick="print()" class="btn btn-success hidden-print"><i class="fa fa-print"></i> Cetak Laporan</a>
 </div>
 </div>
 		

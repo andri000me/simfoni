@@ -25,7 +25,7 @@ $semua_project = $project->tampil_class_project_periode_smp($id_semester);
 
 </div>
 
-
+<hr>
 
 <!DOCTYPE html>
 <html>
@@ -104,7 +104,6 @@ $semua_project = $project->tampil_class_project_periode_smp($id_semester);
 			</tbody>
 		</table>
 			<div class="text-right">
-<a href="" onclick="print()" class="btn btn-success hidden-print"><i class="fa fa-print"></i> Cetak Laporan</a>
 </div>
 </div>
 		
