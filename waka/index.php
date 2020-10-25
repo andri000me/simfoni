@@ -44,28 +44,28 @@ if (!isset($_SESSION['waka']))
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">SISTEM INFORMASI FORM ONLINE SEKOLAH SUKMA BANGSA <?php echo strtoupper ($db_lokasi)?></a>
+      <a class="navbar-brand" href="#"><img src="../logo.jpg" width="40px" class="img-circle" style="display:inline-block;"> SISTEM INFORMASI MANAJEMEN FORM ONLINE SEKOLAH SUKMA BANGSA <?php echo strtoupper ($db_lokasi)?></img></a>
     </div>
       </nav>
     <nav class="navbar-default navbar-side hidden-print">
       <div class="sidebar-collapse"> 
       <div class="user">
-      <img src="../logo.jpg" width="40px" class="img-circle">
-        <h3>Selamat Datang, Waka!</h3>
+      <img src="../assets/img/user.png" width="40px" class="img-circle">
+        <h3>Halo, Wakasek!</h3>
         <p></p>
       </div>
         <ul class="nav" id="main-menu">
 
          
-
-           <li><a href="index.php?halaman=tambah_lomba"><i class="fa fa-files-o"></i> Tambah Data Lomba</a></li>
-           <li><a href="index.php?halaman=tambah_lulusan"><i class="fa fa-files-o"></i> Tambah Data Lulusan</a></li>
-           <li><a href="index.php?halaman=lomba"><i class="fa fa-database"></i> Tampil Semua Data Lomba</a></li>
-            <li><a href="index.php?halaman=lulusan"><i class="fa fa-database"></i> Tampil Semua Data Lulusan</a></li>
-            <li><a href="index.php?halaman=cek_tampil_periode_lulusan"><i class="fa fa-database"></i> Tampil Data Lulusan Per Tahun</a></li>
+        <li><a href="index.php?halaman=home"><i class="fa fa-home"></i> Home</a></li>
+           <li><a href="index.php?halaman=tambah_lomba"><i class="fa fa-plus"></i> Tambah Data Lomba</a></li>
+           <li><a href="index.php?halaman=tambah_lulusan"><i class="fa fa-graduation-cap"></i> Tambah Data Lulusan</a></li>
+           <li><a href="index.php?halaman=lomba"><i class="fa fa-table"></i> Tampil Semua Data Lomba</a></li>
+            <li><a href="index.php?halaman=lulusan"><i class="fa fa-table"></i> Tampil Semua Data Lulusan</a></li>
+            <li><a href="index.php?halaman=cek_tampil_periode_lulusan"><i class="fa fa-table"></i> Tampil Data Lulusan Per Tahun</a></li>
 
            <li  class="tr-tree">
-              <a href="#"><i class="fa fa-cube"></i> Tampil Data Lomba Per Level <i class="pull-right fa fa-angle-right"></i></a>
+              <a href="#"><i class="fa fa-table"></i> Tampil Data Lomba Per Level <i class="pull-right fa fa-angle-right"></i></a>
                <ul class="tr-tree-menu">   
                <li><a href="index.php?halaman=cek_tampil_periode_lomba_sd"><i class="fa fa-database"></i> SD </a></li>
              <li><a href="index.php?halaman=cek_tampil_periode_lomba_smp"><i class="fa fa-database"></i> SMP </a></li>
@@ -115,6 +115,10 @@ if (!isset($_SESSION['waka']))
          elseif ($_GET['halaman']=='lulusan')
         {
           include 'lulusan/lulusan.php';
+        }
+        elseif ($_GET['halaman']=='home')
+        {
+          include 'home/home.php';
         }
         elseif ($_GET['halaman']=='tambah_lulusan')
         {

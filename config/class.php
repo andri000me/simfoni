@@ -2116,6 +2116,18 @@ class guru
 		return $semua_data;	
 	}
 
+	function tampil_guru_admin2()
+	{
+		$semua_data = array();
+		$ambil = $this->koneksi->query("SELECT * FROM guru
+			LEFT JOIN jenjang ON guru.id_jenjang = jenjang.id_jenjang");
+		while ($data_array = $ambil->fetch_assoc()) 
+		{
+			$semua_data[] = $data_array;
+		}
+		return $semua_data;	
+	}
+
 	function tampil_guru()
 	{
 		$semua_data = array();
@@ -3643,6 +3655,151 @@ class ruang
 		return $semua_data;	
 	}
 
+	function hitung_jumlahsiswasd()
+	{
+		
+		$semua_data = array();
+		$ambil = $this->koneksi->query("SELECT COUNT(*) FROM siswa WHERE id_jenjang='1' AND NOT id_kelas='52' AND NOT id_kelas='53' AND NOT id_kelas='54'
+			
+			
+			");
+
+		while ($data_array = $ambil->fetch_row()) 
+		{
+			$semua_data = $data_array;
+		}
+		return $semua_data;	
+	}
+
+	function hitung_jumlahsiswasdlaki()
+	{
+		
+		$semua_data = array();
+		$ambil = $this->koneksi->query("SELECT COUNT(*) FROM siswa WHERE jk_siswa='Laki-Laki' AND id_jenjang='1' AND NOT id_kelas='52' AND NOT id_kelas='53' AND NOT id_kelas='54'
+			
+			
+			");
+
+		while ($data_array = $ambil->fetch_row()) 
+		{
+			$semua_data = $data_array;
+		}
+		return $semua_data;	
+	}
+
+	function hitung_jumlahsiswasdpr()
+	{
+		
+		$semua_data = array();
+		$ambil = $this->koneksi->query("SELECT COUNT(*) FROM siswa WHERE jk_siswa='Perempuan' AND id_jenjang='1' AND NOT id_kelas='52' AND NOT id_kelas='53' AND NOT id_kelas='54'
+			
+			
+			");
+
+		while ($data_array = $ambil->fetch_row()) 
+		{
+			$semua_data = $data_array;
+		}
+		return $semua_data;	
+	}
+
+
+	function hitung_jumlahsiswasmp()
+	{
+		
+		$semua_data = array();
+		$ambil = $this->koneksi->query("SELECT COUNT(*) FROM siswa WHERE id_jenjang='2' AND NOT id_kelas='52' AND NOT id_kelas='53' AND NOT id_kelas='54'
+			
+			
+			");
+
+		while ($data_array = $ambil->fetch_row()) 
+		{
+			$semua_data = $data_array;
+		}
+		return $semua_data;	
+	}
+
+	function hitung_jumlahsiswasmplaki()
+	{
+		
+		$semua_data = array();
+		$ambil = $this->koneksi->query("SELECT COUNT(*) FROM siswa WHERE jk_siswa='Laki-Laki' AND id_jenjang='2' AND NOT id_kelas='52' AND NOT id_kelas='53' AND NOT id_kelas='54'
+			
+			
+			");
+
+		while ($data_array = $ambil->fetch_row()) 
+		{
+			$semua_data = $data_array;
+		}
+		return $semua_data;	
+	}
+
+	function hitung_jumlahsiswasmppr()
+	{
+		
+		$semua_data = array();
+		$ambil = $this->koneksi->query("SELECT COUNT(*) FROM siswa WHERE jk_siswa='Perempuan' AND id_jenjang='2' AND NOT id_kelas='52' AND NOT id_kelas='53' AND NOT id_kelas='54'
+			
+			
+			");
+
+		while ($data_array = $ambil->fetch_row()) 
+		{
+			$semua_data = $data_array;
+		}
+		return $semua_data;	
+	}
+
+	function hitung_jumlahsiswasma()
+	{
+		
+		$semua_data = array();
+		$ambil = $this->koneksi->query("SELECT COUNT(*) FROM siswa WHERE id_jenjang='3' AND NOT id_kelas='52' AND NOT id_kelas='53' AND NOT id_kelas='54'
+			
+			
+			");
+
+		while ($data_array = $ambil->fetch_row()) 
+		{
+			$semua_data = $data_array;
+		}
+		return $semua_data;	
+	}
+
+	function hitung_jumlahsiswasmalaki()
+	{
+		
+		$semua_data = array();
+		$ambil = $this->koneksi->query("SELECT COUNT(*) FROM siswa WHERE jk_siswa='Laki-Laki' AND id_jenjang='3' AND NOT id_kelas='52' AND NOT id_kelas='53' AND NOT id_kelas='54'
+			
+			
+			");
+
+		while ($data_array = $ambil->fetch_row()) 
+		{
+			$semua_data = $data_array;
+		}
+		return $semua_data;	
+	}
+
+	function hitung_jumlahsiswasmapr()
+	{
+		
+		$semua_data = array();
+		$ambil = $this->koneksi->query("SELECT COUNT(*) FROM siswa WHERE jk_siswa='Perempuan' AND id_jenjang='3' AND NOT id_kelas='52' AND NOT id_kelas='53' AND NOT id_kelas='54'
+			
+			
+			");
+
+		while ($data_array = $ambil->fetch_row()) 
+		{
+			$semua_data = $data_array;
+		}
+		return $semua_data;	
+	}
+
 	function hitungalumni()
 	{
 		
@@ -3695,7 +3852,55 @@ class ruang
 	{
 		
 		$semua_data = array();
-		$ambil = $this->koneksi->query("SELECT COUNT(*) FROM guru where status_guru='SDK'
+		$ambil = $this->koneksi->query("SELECT COUNT(*) FROM guru where NOT status_guru='TIDAK AKTIF' AND NOT status_guru='NON SDK'
+			
+			
+			");
+
+		while ($data_array = $ambil->fetch_row()) 
+		{
+			$semua_data = $data_array;
+		}
+		return $semua_data;	
+	}
+
+	function hitung_jumlahsdkhonorer()
+	{
+		
+		$semua_data = array();
+		$ambil = $this->koneksi->query("SELECT COUNT(*) FROM guru where status_guru='SDK HONORER' AND NOT status_guru='TIDAK AKTIF'
+			
+			
+			");
+
+		while ($data_array = $ambil->fetch_row()) 
+		{
+			$semua_data = $data_array;
+		}
+		return $semua_data;	
+	}
+
+	function hitung_jumlahsdkojt()
+	{
+		
+		$semua_data = array();
+		$ambil = $this->koneksi->query("SELECT COUNT(*) FROM guru where status_guru='OJT' AND NOT status_guru='TIDAK AKTIF'
+			
+			
+			");
+
+		while ($data_array = $ambil->fetch_row()) 
+		{
+			$semua_data = $data_array;
+		}
+		return $semua_data;	
+	}
+
+	function hitung_jumlahsdktetap()
+	{
+		
+		$semua_data = array();
+		$ambil = $this->koneksi->query("SELECT COUNT(*) FROM guru where status_guru='SDK' AND NOT status_guru='TIDAK AKTIF'
 			
 			
 			");
@@ -3711,7 +3916,7 @@ class ruang
 	{
 		
 		$semua_data = array();
-		$ambil = $this->koneksi->query("SELECT COUNT(*) FROM guru where status_guru='NON SDK'
+		$ambil = $this->koneksi->query("SELECT COUNT(*) FROM guru where status_guru='NON SDK' AND NOT status_guru='TIDAK AKTIF' 
 			
 			
 			");

@@ -57,7 +57,7 @@ $semua_kelas4 = $kelas4->tampil_kelas4();
 <div class="row">
 	<div class="col-md-12">
 	
-		<table class="table table-bordered">
+		<table class="table table-hover table-striped">
 			
 			<thead>
 				<tr>

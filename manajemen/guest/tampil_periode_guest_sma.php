@@ -40,7 +40,7 @@ $semua_guest = $guest->tampil_guest_periode_sma($id_semester);
 <div class="row">
 	<div class="col-md-12">
 	
-		<table class="table table-bordered" id="data-table">
+		<table class="table table-hover table-striped" id="data-table">
 			
 			<thead>
 				<tr>

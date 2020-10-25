@@ -17,7 +17,7 @@
 	// $user adalah objek user dari class.php
 	// tampil_user adalah fungsi pada class user dari class.php
 	// objek user menjalankan fungsi tampil user
-	$data_guru = $guru->tampil_guru_admin();
+	$data_guru = $guru->tampil_guru_admin2();
 	$data_jenjang = $jenjang->tampil_jenjang_admin();
 // 	echo "<pre>";
 // print_r($data_pengguna);

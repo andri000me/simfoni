@@ -43,14 +43,14 @@ if (!isset($_SESSION['pustaka']))
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">SISTEM INFORMASI FORM ONLINE SEKOLAH SUKMA BANGSA <?php echo strtoupper ($db_lokasi)?></a>
+      <a class="navbar-brand" href="#"><img src="../logo.jpg" width="40px" class="img-circle" style="display:inline-block;"> SISTEM INFORMASI MANAJEMEN FORM ONLINE SEKOLAH SUKMA BANGSA <?php echo strtoupper ($db_lokasi)?></img></a>
     </div>
       </nav>
     <nav class="navbar-default navbar-side hidden-print">
       <div class="sidebar-collapse"> 
       <div class="user">
-        <img src="../assets/img/sukma.jpg" class="img-circle">
-        <h3>Selamat Datang</h3>
+      <img src="../assets/img/user.png" width="40px" class="img-circle">
+        <h3>Halo, Admin Pustaka!</h3>
         <p></p>
       </div>
         </div>
@@ -58,13 +58,13 @@ if (!isset($_SESSION['pustaka']))
 
        
 
-
-           <li><a href="index.php?halaman=tambah_pustaka"><i class="fa fa-binoculars"></i> Tambah Data Kegiatan</a></li>
-            <li><a href="index.php?halaman=tampil_pustaka"><i class="fa fa-binoculars"></i> Tampil Semua Data Kegiatan</a></li>
+        <li><a href="index.php?halaman=home"><i class="fa fa-home"></i> Home</a></li>
+           <li><a href="index.php?halaman=tambah_pustaka"><i class="fa fa-plus"></i> Tambah Data Kegiatan</a></li>
+            <li><a href="index.php?halaman=tampil_pustaka"><i class="fa fa-table"></i> Tampil Semua Data Kegiatan</a></li>
           
           
            <li  class="tr-tree">
-              <a href="#"><i class="fa fa-cube"></i> Tampil Data Kegiatan Per Level <i class="pull-right fa fa-angle-right"></i></a>
+              <a href="#"><i class="fa fa-table"></i> Tampil Data Kegiatan Per Level <i class="pull-right fa fa-angle-right"></i></a>
             <ul class="tr-tree-menu">   
                <li><a href="index.php?halaman=cek_tampil_pustaka_sd"><i class="fa fa-binoculars"></i> SD</a></li>      
                <li><a href="index.php?halaman=cek_tampil_pustaka_smp"><i class="fa fa-binoculars"></i> SMP</a></li>      
@@ -104,6 +104,10 @@ if (!isset($_SESSION['pustaka']))
           elseif ($_GET['halaman']=='tampil_pustaka') 
         {
           include 'pustaka/tampil_pustaka.php';
+        }
+        elseif ($_GET['halaman']=='home') 
+        {
+          include 'home/home.php';
         }
           elseif ($_GET['halaman']=='edit_pustaka') 
         {

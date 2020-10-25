@@ -76,12 +76,12 @@ window.location.href = "http://www.detik.com"
 		else
 			if ($cek5=="pustaka")
 			{
-				echo "<script>location='pustaka/index.php'</script>";
+				echo "<script>location='pustaka/index.php?halaman=home'</script>";
 			}
 		else
 			if ($cek6=="waka")
 			{
-				echo "<script>location='waka/index.php'</script>";
+				echo "<script>location='waka/index.php?halaman=home'</script>";
 			}
 		else
 			{

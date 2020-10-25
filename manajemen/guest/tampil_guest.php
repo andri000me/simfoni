@@ -53,7 +53,7 @@ $semua_mapel1 = $mapel1->tampil_mapel1_admin();
 <div class="row">
 	<div class="col-md-12">
 	
-		<table class="table table-bordered" id="data-table">
+		<table class="table table-hover table-striped" id="data-table">
 			
 			<thead>
 				<tr>

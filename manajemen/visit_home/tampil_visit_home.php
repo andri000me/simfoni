@@ -50,7 +50,6 @@ $semua_visit_home = $visit_home->tampil_visit_home_admin();
 					<th>Tanggal kunjungan</th>
 					<th>Nama Siswa & Kelas</th>
 					<th>Nama Ayah & Ibu</th>
-					<th>Alamat Siswa</th>					
 					<th>Tujuan Kunjungan</th>
 					<th>Hasil Wawancara & Observasi</th>
 					<th>Tindak Lanjut Kunjungan</th>	
@@ -68,15 +67,12 @@ $semua_visit_home = $visit_home->tampil_visit_home_admin();
 			<td><?php echo $value['nama_jenjang']; ?> <br> <?php echo $value['nama_semester']; ?></td>
 			<td><?php echo $value['nama_guru']; ?>  </td>
 			<td><?php echo tanggal_indo($value['waktu_1']) ?></td>
-			<td><?php echo $value['nama_siswa']; ?> ( <br>
-				<?php echo $value['nama_kelas']; ?> )
+			<td><?php echo $value['id_siswa']; ?> ( <br>
+				<?php echo $value['id_kelas']; ?> )
 			</td>
 			
-			<td><?php echo $value['ayah_siswa']; ?> & <br> 
-				<?php echo $value['ibu_siswa']; ?>
-			</td>
-			<td><?php echo $value['alamat_siswa'] ?></td>
-			
+			<td><?php echo $value['ortu']; ?>
+			</td>			
 			<td><?php echo $value['tujuan_visit_home']; ?></td>
 			<td><?php echo $value['hasil_visit_home']; ?></td>
 			<td><?php echo $value['lanjutan_visit_home']; ?></td>			

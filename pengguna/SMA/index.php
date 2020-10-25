@@ -57,27 +57,27 @@ if (!isset($_SESSION['pengguna']) OR $_SESSION['pengguna']['nama_jenjang'] !== "
       </div>
         <ul class="nav" id="main-menu">
         <li><a href="index.php?halaman=home"><i class="fa fa-home"></i> Home</a></li>
-           <li><a href="index.php?halaman=tampil_ruang"><i class="fa fa-binoculars"></i> Pemakaian ruangan</a></li>
+           <li><a href="index.php?halaman=tampil_ruang"><i class="fa fa-building"></i> Pemakaian ruangan</a></li>
 
            <li  class="tr-tree">
-            <a href="#"><i class="fa fa-cube"></i> Tambah Data Kegiatan <i class="pull-right fa fa-angle-right"></i></a>
+            <a href="#"><i class="fa fa-plus"></i> Tambah Data Kegiatan <i class="pull-right fa fa-angle-right"></i></a>
             <ul class="tr-tree-menu"> 
-             <li><a href="index.php?halaman=tambah_class_project"><i class="fa fa-binoculars"></i> Class Project</a></li>
-             <li><a href="index.php?halaman=tambah_guest"><i class="fa fa-binoculars"></i> Data Guest Teacher</a></li>
-              <li><a href="index.php?halaman=tambah_visit"><i class="fa fa-binoculars"></i> Data School Visit</a></li>
+             <li><a href="index.php?halaman=tambah_class_project"><i class="fa fa-circle"></i> Class Project</a></li>
+             <li><a href="index.php?halaman=tambah_guest"><i class="fa fa-circle"></i> Data Guest Teacher</a></li>
+              <li><a href="index.php?halaman=tambah_visit"><i class="fa fa-circle"></i> Data School Visit</a></li>
 
             </ul>
           </li>
 
 
           <li  class="tr-tree">
-            <a href="#"><i class="fa fa-cube">
+            <a href="#"><i class="fa fa-table">
               
             </i> Tampil Semua Data Kegiatan <i class="pull-right fa fa-angle-right"></i></a>
             <ul class="tr-tree-menu"> 
-              <li><a href="index.php?halaman=tampil_class_project"><i class="fa fa-database"></i> Class Project</a></li>
-             <li><a href="index.php?halaman=tampil_guest"><i class="fa fa-database"></i> Guest Teacher</a></li>
-              <li><a href="index.php?halaman=tampil_visit"><i class="fa fa-database"></i> School Visit</a>
+              <li><a href="index.php?halaman=tampil_class_project"><i class="fa fa-circle"></i> Class Project</a></li>
+             <li><a href="index.php?halaman=tampil_guest"><i class="fa fa-circle"></i> Guest Teacher</a></li>
+              <li><a href="index.php?halaman=tampil_visit"><i class="fa fa-circle"></i> School Visit</a>
               </li>     
 
            </ul>
@@ -85,11 +85,11 @@ if (!isset($_SESSION['pengguna']) OR $_SESSION['pengguna']['nama_jenjang'] !== "
 
            
           <li  class="tr-tree">
-            <a href="#"><i class="fa fa-cube">  </i> Tampil Kegiatan Per Semester <i class="pull-right fa fa-angle-right"></i></a>
+            <a href="#"><i class="fa fa-table">  </i> Tampil Kegiatan Per Semester <i class="pull-right fa fa-angle-right"></i></a>
             <ul class="tr-tree-menu">
-                <li><a href="index.php?halaman=cek_tampil_periode_class_project"><i class="fa fa-database"></i> Class Project</a></li>
-               <li><a href="index.php?halaman=cek_tampil_periode_guest"><i class="fa fa-database"></i>  Guest Teacher</a></li>
-               <li><a href="index.php?halaman=cek_tampil_periode_visit"><i class="fa fa-database"></i>  School Visit</a></li>
+                <li><a href="index.php?halaman=cek_tampil_periode_class_project"><i class="fa fa-circle"></i> Class Project</a></li>
+               <li><a href="index.php?halaman=cek_tampil_periode_guest"><i class="fa fa-circle"></i>  Guest Teacher</a></li>
+               <li><a href="index.php?halaman=cek_tampil_periode_visit"><i class="fa fa-circle"></i>  School Visit</a></li>
            </ul>
           </li>
 

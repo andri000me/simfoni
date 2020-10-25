@@ -65,10 +65,10 @@
 				<select class="form-control" name="status_guru" value="">
 					<option value="<?php echo $detail_guru['status_guru']; ?>" hidden><?php echo $detail_guru['status_guru']; ?></option>
 					<option value="SDK">SDK</option>
-					<option value="SDK">SDK HONORER</option>
-					<option value="SDK">OJT</option>
+					<option value="SDK HONORER">SDK HONORER</option>
+					<option value="OJT">OJT</option>
 					<option value="NON SDK">NON SDK</option>
-					<option value="NON SDK">TIDAK AKTIF</option>
+					<option value="TIDAK AKTIF">TIDAK AKTIF</option>
 				</select>
 		</div>
 

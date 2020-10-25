@@ -39,20 +39,17 @@ $semua_visit_home = $visit_home->tampil_visit_home_periode_sd($id_semester);
 
 <div class="row">
 	<div class="col-md-12">
-	
-		<table class="table table-bordered" id="data-table">
-			
-			<table class="table table-bordered" id="data-table">
+				
+			<table class="table table-hover table-striped" id="data-table">
 			
 			<thead>
 				<tr>
 					<th>No</th>
-					<th>Jenjang</th>
+					<th>Semester</th>
 					<th>Koordinator Pelaksana</th>
 					<th>Tanggal kunjungan</th>
 					<th>Nama Siswa & Kelas</th>
 					<th>Nama Ayah & Ibu</th>
-					<th>Alamat Siswa</th>					
 					<th>Tujuan Kunjungan</th>
 					<th>Hasil Wawancara & Observasi</th>
 					<th>Tindak Lanjut Kunjungan</th>	
@@ -70,15 +67,12 @@ $semua_visit_home = $visit_home->tampil_visit_home_periode_sd($id_semester);
 			<td> <?php echo $value['nama_semester']; ?></td>
 			<td><?php echo $value['nama_guru']; ?>  </td>
 			<td><?php echo tanggal_indo($value['waktu_1']) ?></td>
-			<td><?php echo $value['nama_siswa']; ?> ( <br>
-				<?php echo $value['nama_kelas']; ?> )
+			<td><?php echo $value['id_siswa']; ?> ( <br>
+				<?php echo $value['id_kelas']; ?> )
 			</td>
 			
-			<td><?php echo $value['ayah_siswa']; ?> & <br> 
-				<?php echo $value['ibu_siswa']; ?>
-			</td>
-			<td><?php echo $value['alamat_siswa'] ?></td>
-			
+			<td><?php echo $value['ortu']; ?>
+			</td>			
 			<td><?php echo $value['tujuan_visit_home']; ?></td>
 			<td><?php echo $value['hasil_visit_home']; ?></td>
 			<td><?php echo $value['lanjutan_visit_home']; ?></td>			
