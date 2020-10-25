@@ -12,6 +12,7 @@
 
 
 </div>
+<hr>
  <?php  
 // include_once "../config/class.php";
 

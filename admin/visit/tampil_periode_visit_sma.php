@@ -24,7 +24,7 @@ $semua_visit = $visit->tampil_visit_periode_sma($id_semester);
 
 
 </div>
-
+<hr>
 
 
 <!DOCTYPE html>

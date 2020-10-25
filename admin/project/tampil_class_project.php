@@ -1,7 +1,8 @@
 <div class="row">
 	<div class="col-md-6">
 		<h3>Data Class Project</h3>
-		<h3>Sekolah Sukma Bangsa <?php echo $db_lokasi ?></h3>
+		<h3>Sekolah Sukma Bangsa <?php echo $db_lokasi ?></h3><br>
+
 	</div>
 	<div class="col-md-6">
 		<div class="tambah-user hidden-print">
@@ -12,6 +13,7 @@
 
 
 </div>
+<hr>
  <?php  
 // include_once "../config/class.php";
 
@@ -53,7 +55,7 @@ $semua_mapel = $mapel->tampil_mapel();
 <div class="row">
 	<div class="col-md-12">
 	
-		<table class="table table-hover table-striped" id="data-table">
+		<table class="table table-hover table-striped table-bordered" id="data-table">
 			
 			<thead>
 				<tr>
@@ -114,9 +116,7 @@ $semua_mapel = $mapel->tampil_mapel();
 					
 			</tbody>
 		</table>
-			<div class="text-right">
-<a href="" onclick="print()" class="btn btn-success hidden-print"><i class="fa fa-print"></i> Cetak Laporan</a>
-</div>
+			<div class="text-right"></div>
 </div>
 		
 	

@@ -24,7 +24,7 @@ $semua_project = $project->tampil_class_project_periode_sd($id_semester);
 
 
 </div>
-
+<hr>
 
 
 <!DOCTYPE html>

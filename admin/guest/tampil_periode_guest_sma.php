@@ -24,7 +24,7 @@ $semua_guest = $guest->tampil_guest_periode_sma($id_semester);
 
 
 </div>
-
+<hr>
 
 
 <!DOCTYPE html>
