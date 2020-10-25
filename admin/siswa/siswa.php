@@ -27,7 +27,7 @@
 <!-- melihat isi array data user -->
 <!-- <pre><?php //print_r($data_user); ?></pre>  -->
 
-<table class="table table-bordered" id="data-table" >
+<table class="table table-hover table-striped" id="data-table" >
 <thead>
 		<tr>
 			<th>No</th>			
@@ -62,8 +62,8 @@
 			
 			
 			<td class="hidden-print"> 
-				<a href="index.php?halaman=edit_siswa&id_siswa=<?php echo $value['id_siswa']; ?>" class="" >Ubah Data</a> <br> <br>
-				<a href="index.php?halaman=hapus_siswa&id_siswa=<?php echo $value['id_siswa']; ?>" class="" onclick="return confirm('hapus data siswa <?php echo $value["tema_siswa"]; ?>') " >Hapus Data</a> 
+				<a href="index.php?halaman=edit_siswa&id_siswa=<?php echo $value['id_siswa']; ?>" class="" ><div class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></div></a> <br> <br>
+				<a href="index.php?halaman=hapus_siswa&id_siswa=<?php echo $value['id_siswa']; ?>" class="" onclick="return confirm('hapus data siswa <?php echo $value["tema_siswa"]; ?>') " ><div class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></div></a> 
 				
 						
 			</td>

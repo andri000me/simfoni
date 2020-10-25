@@ -38,7 +38,7 @@ $semua_visit_home = $visit_home->tampil_visit_home_admin();
 <div class="row">
 	<div class="col-md-12">
 	
-		<table class="table table-bordered" id="data-table">
+		<table class="table table-hover table-striped" id="data-table">
 			
 			<thead>
 				<tr>

@@ -50,7 +50,7 @@ $data_guru = $guru->tampil_guru_pjruangan();
 <div class="row">
 	<div class="col-md-12">
 	
-		<table class="table table-bordered" id="data-table">
+		<table class="table table-hover table-striped" id="data-table">
 			
 			<thead>
 				<tr>
@@ -91,8 +91,8 @@ $data_guru = $guru->tampil_guru_pjruangan();
 			
 			<td class="hidden-print">
 
-				<a href="index.php?halaman=edit_ruang&id_peminjaman=<?php echo $value['id_peminjaman']; ?>" class="" >Ubah Data</a> <br> 
-				<a href="index.php?halaman=hapus_ruang&id_peminjaman=<?php echo $value['id_peminjaman']; ?>" class="" onclick="return confirm('hapus pengajuan pemakaian dari <?php echo $value["nama_guru"]; ?>') " >Hapus Data</a> <br>
+				<a href="index.php?halaman=edit_ruang&id_peminjaman=<?php echo $value['id_peminjaman']; ?>" class="" ><div class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></div></a> <br> <br> 
+				<a href="index.php?halaman=hapus_ruang&id_peminjaman=<?php echo $value['id_peminjaman']; ?>" class="" onclick="return confirm('hapus pengajuan pemakaian dari <?php echo $value["nama_guru"]; ?>') " ><div class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></div></a> <br>
 				
 				
 						

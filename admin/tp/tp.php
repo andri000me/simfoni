@@ -44,7 +44,7 @@ $semua_tp = $tp->tampil_tp_admin();
 
 
 
-<table class="table table-bordered" id="data-table" >
+<table class="table table-hover table-striped" id="data-table" >
 	<thead>
 		<tr>
 			<th>No</th>

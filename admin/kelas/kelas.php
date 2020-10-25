@@ -45,7 +45,7 @@ $semua_kelas2 = $kelas->tampil_kelas_admin2();
 
 
 
-<table class="table table-bordered" id="data-table" >
+<table class="table table-hover table-striped" id="data-table" >
 	<thead>
 		<tr>
 			<th>No</th>

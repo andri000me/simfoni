@@ -44,7 +44,7 @@ $semua_semester = $semester->tampil_semester_admin2();
 
 
 
-<table class="table table-bordered" id="data-table" >
+<table class="table table-hover table-striped" id="data-table" >
 	<thead>
 		<tr>
 			<th>No</th>
