@@ -92,6 +92,7 @@ if (!isset($_SESSION['admin']))
             </ul>
           </li>
 
+          <li><a href="index.php?halaman=tampil_jadwal"><i class="fa fa-building"></i> Jadwal Pemakaian Ruangan</a></li>
           <li><a href="index.php?halaman=tampil_ruang"><i class="fa fa-check"></i> Persetujuan Pengajuan Ruangan</a></li>
 
 
@@ -185,6 +186,22 @@ if (!isset($_SESSION['admin']))
         elseif ($_GET['halaman']=='ubah_password_pengguna') 
         {
           include 'pengguna/ubah_password_pengguna.php';
+        }
+        elseif ($_GET['halaman']=='tampil_jadwal') 
+        {
+          include 'jadwal/tampil_jadwal.php';
+        }
+        elseif ($_GET['halaman']=='tambah_jadwal') 
+        {
+          include 'jadwal/tambah_jadwal.php';
+        }
+        elseif ($_GET['halaman']=='edit_jadwal') 
+        {
+          include 'jadwal/edit_jadwal.php';
+        }
+        elseif ($_GET['halaman']=='hapus_jadwal') 
+        {
+          include 'jadwal/hapus_jadwal.php';
         }
         elseif ($_GET['halaman']=='tampil_ruang') 
         {
