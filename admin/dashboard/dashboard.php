@@ -59,7 +59,6 @@ $hitungalumni = $ruang->hitungalumni();
             </div>
           </div>
 
-
           
           <div class="col-lg-6 col-6" style="margin-bottom:10px;">
             <!-- small box -->

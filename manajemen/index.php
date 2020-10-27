@@ -84,6 +84,20 @@ if (!isset($_SESSION['manajemen']))
                
            </ul>
           </li>
+          <li  class="tr-tree">
+            <a href="#"><i class="fa fa-user"></i> Siswa <i class="pull-right fa fa-angle-right"></i></a>
+            <ul class="tr-tree-menu"> 
+            <li><a href="index.php?halaman=tampil_siswa"><i class="fa fa-table"></i> Tampil Data Siswa</a></li>
+             <li><a href="index.php?halaman=tambah_siswa"><i class="fa fa-plus"></i> Tambah Data Siswa</a></li>
+            </ul>
+          </li>
+          <li  class="tr-tree">
+            <a href="#"><i class="fa fa-graduation-cap"></i> Lulusan <i class="pull-right fa fa-angle-right"></i></a>
+            <ul class="tr-tree-menu"> 
+            <li><a href="index.php?halaman=tampil_lulusan"><i class="fa fa-table"></i> Tampil Data Lulusan</a></li>
+             <li><a href="index.php?halaman=tambah_lulusan"><i class="fa fa-plus"></i> Tambah Data Lulusan</a></li>
+            </ul>
+          </li>
 
           <li  class="tr-tree">
             <a href="#"><i class="fa fa-table"></i> Input Laporan Kegiatan <i class="pull-right fa fa-angle-right"></i></a>
@@ -172,6 +186,34 @@ if (!isset($_SESSION['manajemen']))
         elseif ($_GET['halaman']=='lomba') 
         {
           include 'lomba/lomba.php';
+        }
+        elseif ($_GET['halaman']=='tampil_siswa') 
+        {
+          include 'siswa/siswa.php';
+        }
+        elseif ($_GET['halaman']=='tampil_lulusan') 
+        {
+          include 'lulusan/lulusan.php';
+        }
+        elseif ($_GET['halaman']=='edit_lulusan') 
+        {
+          include 'lulusan/edit_lulusan.php';
+        }
+        elseif ($_GET['halaman']=='hapus_lulusan') 
+        {
+          include 'lulusan/hapus_lulusan.php';
+        }
+        elseif ($_GET['halaman']=='edit_siswa') 
+        {
+          include 'siswa/edit_siswa.php';
+        }
+        elseif ($_GET['halaman']=='hapus_siswa') 
+        {
+          include 'siswa/hapus_siswa.php';
+        }
+        elseif ($_GET['halaman']=='tambah_siswa') 
+        {
+          include 'siswa/tambah_siswa.php';
         }
         elseif ($_GET['halaman']=='hapus_lomba') 
         {
