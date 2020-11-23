@@ -85,9 +85,12 @@ if (!isset($_SESSION['manajemen']))
            </ul>
           </li>
           <li  class="tr-tree">
-            <a href="#"><i class="fa fa-user"></i> Siswa <i class="pull-right fa fa-angle-right"></i></a>
+            <a href="#"><i class="fa fa-user"></i> Data Siswa <i class="pull-right fa fa-angle-right"></i></a>
             <ul class="tr-tree-menu"> 
-            <li><a href="index.php?halaman=tampil_siswa"><i class="fa fa-table"></i> Tampil Data Siswa</a></li>
+            <li><a href="index.php?halaman=cek_tampil_siswa_sd"><i class="fa fa-table"></i> Data Siswa SD</a></li>
+            <li><a href="index.php?halaman=cek_tampil_siswa_smp"><i class="fa fa-table"></i> Data Siswa SMP</a></li>
+            <li><a href="index.php?halaman=cek_tampil_siswa_sma"><i class="fa fa-table"></i> Data Siswa SMA</a></li>
+            <li><a href="index.php?halaman=tampil_siswa"><i class="fa fa-table"></i> Data Semua Siswa</a></li>
              <li><a href="index.php?halaman=tambah_siswa"><i class="fa fa-plus"></i> Tambah Data Siswa</a></li>
             </ul>
           </li>
@@ -187,13 +190,49 @@ if (!isset($_SESSION['manajemen']))
         {
           include 'lomba/lomba.php';
         }
+        elseif ($_GET['halaman']=='tambah_supervisi') 
+        {
+          include 'supervisi/tambah_supervisi.php';
+        }
+        elseif ($_GET['halaman']=='tampil_supervisi') 
+        {
+          include 'supervisi/tampil_supervisi.php';
+        }
         elseif ($_GET['halaman']=='tampil_siswa') 
         {
           include 'siswa/siswa.php';
         }
+        elseif ($_GET['halaman']=='tampil_siswa_sd') 
+        {
+          include 'siswa/tampil_siswa_sd.php';
+        }
+        elseif ($_GET['halaman']=='tampil_siswa_smp') 
+        {
+          include 'siswa/tampil_siswa_smp.php';
+        }
+        elseif ($_GET['halaman']=='tampil_siswa_sma') 
+        {
+          include 'siswa/tampil_siswa_sma.php';
+        }
+        elseif ($_GET['halaman']=='cek_tampil_siswa_sd') 
+        {
+          include 'siswa/cek_tampil_siswa_sd.php';
+        }
+        elseif ($_GET['halaman']=='cek_tampil_siswa_smp') 
+        {
+          include 'siswa/cek_tampil_siswa_smp.php';
+        }
+        elseif ($_GET['halaman']=='cek_tampil_siswa_sma') 
+        {
+          include 'siswa/cek_tampil_siswa_sma.php';
+        }
         elseif ($_GET['halaman']=='tampil_lulusan') 
         {
           include 'lulusan/lulusan.php';
+        }
+        elseif ($_GET['halaman']=='tambah_lulusan') 
+        {
+          include 'lulusan/tambah_lulusan.php';
         }
         elseif ($_GET['halaman']=='edit_lulusan') 
         {

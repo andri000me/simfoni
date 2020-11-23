@@ -15,4 +15,6 @@
 				<a href="../template/Format Laporan Wali Kelas.docx" class="" >Download Template Laporan Wali Kelas</a>	<br> 
 				<a href="../template/Format Home Visit.docx" class="" >Download Template Home Visit</a>	<br> 
 				<a href="../template/Format RRP SSB Bireuen 2018.docx" class="" >Download Template RPP</a>	<br> 
+				<a href="../template/Format Supervisi.doc" class="" >Download Template Supervisi</a>	<br> 
+
 				

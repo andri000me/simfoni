@@ -714,6 +714,87 @@ class guest
 
 	}
 
+	function cek_periodekelas_sd($id_kelas)
+	{
+		//$id_jenjang = $_SESSION['pengguna']['id_jenjang'];
+		$ambil = $this->koneksi->query("SELECT * FROM siswa
+		LEFT JOIN kelas on siswa.id_kelas = kelas.id_kelas
+		LEFT JOIN jenjang ON siswa.id_jenjang = jenjang.id_jenjang
+		WHERE kelas.id_kelas=$id_kelas");
+		$hitung = $ambil->num_rows;
+
+		if ($hitung > 0)
+		{
+		$data_array = $ambil->fetch_assoc();
+		$id_kelas = $data_array['id_kelas'];
+		return $id_kelas;
+		}
+		else
+		{
+			return "kosong";
+		}
+
+	}
+
+	function cek_periodekelas_smp($id_kelas)
+	{
+		//$id_jenjang = $_SESSION['pengguna']['id_jenjang'];
+		$ambil = $this->koneksi->query("SELECT * FROM siswa
+		LEFT JOIN kelas on siswa.id_kelas = kelas.id_kelas
+		LEFT JOIN jenjang ON siswa.id_jenjang = jenjang.id_jenjang
+		WHERE kelas.id_kelas=$id_kelas");
+		$hitung = $ambil->num_rows;
+
+		if ($hitung > 0)
+		{
+		$data_array = $ambil->fetch_assoc();
+		$id_kelas = $data_array['id_kelas'];
+		return $id_kelas;
+		}
+		else
+		{
+			return "kosong";
+		}
+
+	}
+
+	function cek_periodekelas_sma($id_kelas)
+	{
+		//$id_jenjang = $_SESSION['pengguna']['id_jenjang'];
+		$ambil = $this->koneksi->query("SELECT * FROM siswa
+		LEFT JOIN kelas on siswa.id_kelas = kelas.id_kelas
+		LEFT JOIN jenjang ON siswa.id_jenjang = jenjang.id_jenjang
+		WHERE kelas.id_kelas=$id_kelas");
+		$hitung = $ambil->num_rows;
+
+		if ($hitung > 0)
+		{
+		$data_array = $ambil->fetch_assoc();
+		$id_kelas = $data_array['id_kelas'];
+		return $id_kelas;
+		}
+		else
+		{
+			return "kosong";
+		}
+
+	}
+
+
+	function tampil_siswa_kelas_sd($id_kelas)
+	{
+		$semua_data = array();
+		$ambil = $this->koneksi->query("SELECT * FROM siswa
+			LEFT JOIN kelas on siswa.id_kelas = kelas.id_kelas
+			LEFT JOIN jenjang ON siswa.id_jenjang = jenjang.id_jenjang
+			WHERE kelas.id_kelas=$id_kelas");
+		while ($data_array = $ambil->fetch_assoc()) 
+		{
+			$semua_data[] = $data_array;
+		}
+		return $semua_data;	
+	}
+
 		
 		function tampil_guest_periode_sd($id_semester)
 	{
@@ -1499,6 +1580,11 @@ class visit_home
 	$this->koneksi->query("INSERT INTO visit_home (id_jenjang, id_semester, id_kelas, id_guru, id_siswa, ortu, waktu_1, tujuan_visit_home, hasil_visit_home, lanjutan_visit_home, laporan) VALUES ('$id_jenjang', '$id_semester', '$id_kelas', '$id_guru', '$id_siswa', '$ortu', '$waktu_1', '$tujuan_visit_home', '$hasil_visit_home', '$lanjutan_visit_home', '')");
 	}
 
+	function simpan_supervisi($id_jenjang, $id_semester, $mapel, $koordinator_supervisi, $nama_guru, $waktu_1, $nilai_akhir, $kriteria)
+	{ 
+	$this->koneksi->query("INSERT INTO supervisi (id_jenjang, id_semester, mapel, koordinator_supervisi, nama_guru, waktu, nilai_akhir, kriteria, laporan) VALUES ('$id_jenjang', '$id_semester', '$mapel', '$koordinator_supervisi', '$nama_guru', '$waktu_1', '$nilai_akhir','$kriteria','')");
+	}
+
 	function tampil_visit_home()
 	{
 		$semua_data = array();
@@ -1529,6 +1615,25 @@ class visit_home
 		 	LEFT JOIN guru ON visit_home.id_guru = guru.id_guru	 
 		 	LEFT JOIN semester ON visit_home.id_semester = semester.id_semester	 
 		 	ORDER BY visit_home.id_semester, visit_home.waktu_1
+
+		 	
+		 	
+		 	");
+		while ($data_array = $ambil->fetch_assoc()) 
+		{
+			$semua_data[] = $data_array;
+		}
+		return $semua_data;
+	}	
+
+	function tampil_supervisi()
+	{
+		$semua_data = array();
+		
+		 $ambil = $this->koneksi->query("SELECT * FROM supervisi		 	
+		 	LEFT JOIN jenjang ON supervisi.id_jenjang = jenjang.id_jenjang
+		 	LEFT JOIN semester ON supervisi.id_semester = semester.id_semester	 
+		 	ORDER BY id_supervisi ASC;
 
 		 	
 		 	
@@ -2286,6 +2391,48 @@ class kelas
 		}
 		return $semua_data;	
 	}
+
+
+	function tampil_kelas_sd()
+	{
+		
+		// $id_jenjang = $_SESSION['pengguna']['id_jenjang'];
+		$ambil = $this->koneksi->query("SELECT * FROM kelas WHERE status='Aktif' AND id_jenjang ='1' ORDER BY nama_kelas ASC");
+
+		while ($data_array = $ambil->fetch_assoc()) 
+		{
+			$semua_data[] = $data_array;
+		}
+		return $semua_data;	
+	}
+
+	function tampil_kelas_smp()
+	{
+		
+		// $id_jenjang = $_SESSION['pengguna']['id_jenjang'];
+		$ambil = $this->koneksi->query("SELECT * FROM kelas WHERE status='Aktif' AND id_jenjang ='2' ORDER BY nama_kelas ASC");
+
+		while ($data_array = $ambil->fetch_assoc()) 
+		{
+			$semua_data[] = $data_array;
+		}
+		return $semua_data;	
+	}
+
+	function tampil_kelas_sma()
+	{
+		
+		// $id_jenjang = $_SESSION['pengguna']['id_jenjang'];
+		$ambil = $this->koneksi->query("SELECT * FROM kelas WHERE status='Aktif' AND id_jenjang ='3' ORDER BY nama_kelas ASC");
+
+		while ($data_array = $ambil->fetch_assoc()) 
+		{
+			$semua_data[] = $data_array;
+		}
+		return $semua_data;	
+	}
+
+
 
 		function tampil_kelas_admin()
 	{
