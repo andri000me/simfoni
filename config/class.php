@@ -6,7 +6,7 @@
 
 	$db_host = "localhost";
 	$db_user = "root";
-	$db_pass = "kebersamaan";
+	$db_pass = "";
 	$db_name = "simfoni";
 	$db_lokasi ="Bireuen";
 
@@ -1691,7 +1691,7 @@ class visit_home
 
 	function hapus_supervisi($id_supervisi)
 	{
-		$this->koneksi->query("DELETE FROM supervisi WHERE id_supervisi = '$id_visit_home'");
+		$this->koneksi->query("DELETE FROM supervisi WHERE id_supervisi = '$id_supervisi'");
 	}
 
 	
