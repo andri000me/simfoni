@@ -6,7 +6,7 @@
 
 	$db_host = "localhost";
 	$db_user = "root";
-	$db_pass = "";
+	$db_pass = "kebersamaan";
 	$db_name = "simfoni";
 	$db_lokasi ="Bireuen";
 
@@ -1404,6 +1404,15 @@ class guest
 		return $data_array;
 	}
 
+	
+	function ambil_supervisi($id_supervisi)
+	{
+		$ambil = $this->koneksi->query("SELECT * FROM supervisi 
+			WHERE id_supervisi='$id_supervisi'");
+		$data_array = $ambil->fetch_assoc();
+		return $data_array;
+	}
+
 
 	function ubah_visit($id_jenjang, $id_semester, $id_kelas, $id_kelas2, $id_kelas3, $id_kelas4, $id_guru, $tema_visit, $hasil_visit, $lokasi_visit, $waktu_1, $waktu_2, $id_mapel1, $id_mapel2, $id_mapel3, $id_mapel4, $biaya_visit, $id_visit)	
 	{
@@ -1655,9 +1664,24 @@ class visit_home
 	}
 
 
+	function ambil_supervisi($id_supervisi)
+	{
+		$ambil = $this->koneksi->query("SELECT * FROM supervisi 
+		WHERE id_supervisi='$id_supervisi'");
+		$data_array = $ambil->fetch_assoc();
+		return $data_array;
+	}
+
+	
+
 	function ubah_visit_home($id_jenjang, $id_semester, $id_kelas, $id_guru, $id_siswa, $ortu, $waktu_1, $tujuan_visit_home, $hasil_visit_home, $lanjutan_visit_home, $id_visit_home)	
 	{
 		$this->koneksi->query("UPDATE visit_home SET id_jenjang= '$id_jenjang', id_semester='$id_semester', id_kelas='$id_kelas', id_guru= '$id_guru', id_siswa= '$id_siswa',  ortu = '$ortu', waktu_1= '$waktu_1', tujuan_visit_home= '$tujuan_visit_home', hasil_visit_home= '$hasil_visit_home', lanjutan_visit_home='$lanjutan_visit_home' WHERE id_visit_home='$id_visit_home'");
+	}
+
+	function ubah_supervisi($id_jenjang, $id_semester, $mapel, $koordinator_supervisi, $nama_guru, $waktu, $nilai_akhir, $kriteria, $id_supervisi)	
+	{
+		$this->koneksi->query("UPDATE supervisi SET id_jenjang= '$id_jenjang', id_semester='$id_semester', mapel='$mapel', koordinator_supervisi= '$koordinator_supervisi', nama_guru= '$nama_guru', waktu= '$waktu', nilai_akhir= '$nilai_akhir', kriteria= '$kriteria' WHERE id_supervisi='$id_supervisi'");
 	}
 
 	function hapus_visit_home($id_visit_home)
@@ -1665,6 +1689,10 @@ class visit_home
 		$this->koneksi->query("DELETE FROM visit_home WHERE id_visit_home = '$id_visit_home'");
 	}
 
+	function hapus_supervisi($id_supervisi)
+	{
+		$this->koneksi->query("DELETE FROM supervisi WHERE id_supervisi = '$id_visit_home'");
+	}
 
 	
 
@@ -2742,6 +2770,19 @@ class semester
 		
 		$semua_data = array();
 		$ambil = $this->koneksi->query("SELECT * FROM semester where status='Aktif'");
+
+		while ($data_array = $ambil->fetch_assoc()) 
+		{
+			$semua_data[] = $data_array;
+		}
+		return $semua_data;	
+	}
+
+	function tampil_supervisi_admin($id_supervisi)
+	{
+		
+		$semua_data = array();
+		$ambil = $this->koneksi->query("SELECT * FROM supervisi where id_supervisi='$id_supervisi'");
 
 		while ($data_array = $ambil->fetch_assoc()) 
 		{

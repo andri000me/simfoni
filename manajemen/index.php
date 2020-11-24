@@ -198,6 +198,18 @@ if (!isset($_SESSION['manajemen']))
         {
           include 'supervisi/tampil_supervisi.php';
         }
+        elseif ($_GET['halaman']=='upload_supervisi') 
+        {
+          include 'supervisi/upload_supervisi.php';
+        }
+        elseif ($_GET['halaman']=='edit_supervisi') 
+        {
+          include 'supervisi/edit_supervisi.php';
+        }
+        elseif ($_GET['halaman']=='hapus_supervisi') 
+        {
+          include 'supervisi/hapus_supervisi.php';
+        }
         elseif ($_GET['halaman']=='tampil_siswa') 
         {
           include 'siswa/siswa.php';

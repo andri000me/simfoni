@@ -41,7 +41,6 @@ $semua_visit_home = $visit_home->tampil_supervisi();
 	
 		<table class="table table-bordered" id="data-table">
 			
-			<table class="table table-bordered" id="data-table">
 			
 			<thead>
 				<tr>
@@ -76,14 +75,14 @@ $semua_visit_home = $visit_home->tampil_supervisi();
 			<td>
 			<?php echo $value['laporan'] ?> <br> <br>
 			<!-- <?php //echo $value['proposal'] ?> <br> -->
-				<a href="index.php?halaman=upload_laporan_supervisi&id_supervisi=<?php echo $value['id_supervisi']; ?>" class="" >Upload File</a> <br>
+				<a href="index.php?halaman=upload_supervisi&id_supervisi=<?php echo $value['id_supervisi']; ?>" class="" >Upload File</a> <br>
 				<!-- <a href="index.php?halaman=upload_proposal_visit_home&id_visit_home=<?php //echo $value['id_visit_home']; ?>" class="" >Upload Proposal</a> <br>	 -->
-				<a href="../laporan/visit_home/<?php echo $value['laporan'] ?>" class="" >Download File</a>	 <br>
+				<a href="../laporan/supervisi/<?php echo $value['laporan'] ?>" class="" >Download File</a>	 <br>
 
 					
 
-				<a href="index.php?halaman=edit_visit_home&id_visit_home=<?php echo $value['id_visit_home']; ?>" class="" >Ubah Data</a> <br> <br>
-				<a href="index.php?halaman=hapus_visit_home&id_visit_home=<?php echo $value['id_visit_home']; ?>" class="" onclick="return confirm('hapus data home visit <?php echo $value["tujuan_visit_home"]; ?>') " >Hapus Data</a> 
+				<a href="index.php?halaman=edit_supervisi&id_supervisi=<?php echo $value['id_supervisi']; ?>" class="" >Ubah Data</a> <br> <br>
+				<a href="index.php?halaman=hapus_supervisi&id_supervisi=<?php echo $value['id_supervisi']; ?>" class="" onclick="return confirm('Hapus data supervisi?') " >Hapus Data</a> 
 				
 						
 			</td>

@@ -1,12 +1,12 @@
 
 <?php  
 	
-	$id_visit = $_GET['id_visit'];
+	$id_supervisi = $_GET['id_supervisi'];
 // 	echo "<pre>";
 // print_r($id_user);
 // echo "</pre>";
 
-$detail_visit = $visit->ambil_visit($id_visit);
+$detail_visit = $visit->ambil_supervisi($id_supervisi);
 $data_mapel = $mapel->tampil_mapel();
 $data_kelas = $kelas->tampil_kelas_admin();
 $data_guru = $guru->tampil_guru_admin();
@@ -35,10 +35,10 @@ $semua_mapel4 = $mapel4->tampil_mapel4_admin();
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Upload Laporan Home Visit</title>
+	<title>Upload Laporan Supervisi</title>
 </head>
 <body>
-	<h1>Upload Laporan Home Visit</h1>
+	<h1>Upload Laporan Supervisi</h1>
 	<hr>
 	
 	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
@@ -68,18 +68,23 @@ $semua_mapel4 = $mapel4->tampil_mapel4_admin();
 				if (!empty($lokasi))
 				{
 
-				move_uploaded_file($lokasi, "../laporan/school_visit/$nama");
+				move_uploaded_file($lokasi, "../laporan/supervisi/$nama");
 				$database = new mysqli("localhost", "root", "kebersamaan", "simfoni");
-				$database->query("UPDATE visit SET laporan='$nama' WHERE id_visit='$id_visit'");
+				$database->query("UPDATE supervisi SET laporan='$nama' WHERE id_supervisi='$id_supervisi'");
+				print_r($database);
+
 				}
 				else
 				{
 					$database = new mysqli("localhost", "root", "kebersamaan", "simfoni");
-					$database->query("UPDATE visit SET laporan='$nama' WHERE id_visit='$id_visit'");
+					$database->query("UPDATE supervisi SET laporan='$nama' WHERE id_supervisi='$id_supervisi'");
+					// print_r($database);
 				}
 
+
+
 				echo "<script>alert('data tersimpan')</script>";
-				echo "<script>location='index.php?halaman=tampil_visit'</script>";
+				echo "<script>location='index.php?halaman=tampil_supervisi'</script>";
 
 				
 			}

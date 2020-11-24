@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 23 Nov 2020 pada 09.49
+-- Waktu pembuatan: 24 Nov 2020 pada 03.36
 -- Versi server: 10.4.14-MariaDB
 -- Versi PHP: 7.2.34
 
@@ -1641,7 +1641,8 @@ CREATE TABLE `manajemen` (
 --
 
 INSERT INTO `manajemen` (`id_manajemen`, `nama_manajemen`, `nip_manajemen`, `username_manajemen`, `password_manajemen`) VALUES
-(1, 'manajemen', 'manajemen', 'manajemen', '19b51f1cbb6146adcacbce46d5bdc3f2');
+(1, 'manajemen', 'manajemen', 'manajemen', '19b51f1cbb6146adcacbce46d5bdc3f2'),
+(2, 'tatausaha', 'tatausaha', 'tatausaha', '82849c85acf1f4e6e4eec748f0aeddf4');
 
 -- --------------------------------------------------------
 
@@ -3652,13 +3653,6 @@ CREATE TABLE `supervisi` (
   `laporan` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data untuk tabel `supervisi`
---
-
-INSERT INTO `supervisi` (`id_supervisi`, `id_jenjang`, `id_semester`, `mapel`, `koordinator_supervisi`, `nama_guru`, `waktu`, `nilai_akhir`, `kriteria`, `laporan`) VALUES
-(3, 1, 5, 'Matematika', 'Aditya Aziz Fikhri', 'Firdaus Adiannur', '2020-11-23', '80', 'Baik', '');
-
 -- --------------------------------------------------------
 
 --
@@ -4248,7 +4242,7 @@ ALTER TABLE `lulusan`
 -- AUTO_INCREMENT untuk tabel `manajemen`
 --
 ALTER TABLE `manajemen`
-  MODIFY `id_manajemen` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_manajemen` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT untuk tabel `mapel`
@@ -4362,7 +4356,7 @@ ALTER TABLE `status_final`
 -- AUTO_INCREMENT untuk tabel `supervisi`
 --
 ALTER TABLE `supervisi`
-  MODIFY `id_supervisi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_supervisi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT untuk tabel `tp`

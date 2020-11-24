@@ -51,6 +51,7 @@ window.location.href = "http://www.detik.com"
 		$cek4 = $pjruangan->login_pjruangan($_POST['username'], $_POST['password']);
 		$cek5 = $pustaka->login_pustaka($_POST['username'], $_POST['password']);
 		$cek6 = $waka->login_waka($_POST['username'], $_POST['password']);
+
 				 		// echo "$cek";
 
 		if ($cek=='admin') 
@@ -60,6 +61,11 @@ window.location.href = "http://www.detik.com"
 		} 
 		else 
 			if ($cek2=='manajemen')  
+			{
+				echo "<script>location='manajemen/index.php?halaman=home'</script>";
+			}
+			else 
+			if ($cek2=='tatausaha')  
 			{
 				echo "<script>location='manajemen/index.php?halaman=home'</script>";
 			}
