@@ -6,7 +6,7 @@
 
 	$db_host = "localhost";
 	$db_user = "root";
-	$db_pass = "";
+	$db_pass = "kebersamaan";
 	$db_name = "simfoni";
 	$db_lokasi ="Bireuen";
 
